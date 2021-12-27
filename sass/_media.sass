@@ -1,0 +1,362 @@
+@media (min-width: 768px) // планшеты
+  .container
+    max-width: $md
+    min-width: $md
+
+  .nav
+    padding: 40px 0
+    &__logo
+      font-size: 18px
+      line-height: 22px
+    &__list
+      display: flex
+    &__menu-btn
+      display: none
+    &__list-mobile
+      display: none
+  .hero
+    padding-top: 70px 0 100px 0
+    &__wrapper
+      @include section-md
+    &__description
+      margin-bottom: 0
+    &__title
+      text-align: left
+    &__text
+      text-align: left
+    &__block-img
+
+      width: 100%
+
+      height: 260px
+    &__btn-group
+      display: flex
+    &__btn
+      @include btn-md
+      &:nth-child(1)
+        margin-bottom: 0
+        margin-right: 20px
+    &__note
+      text-align: left
+  .tegs
+    padding: 50px 0
+    &__wrwpper
+    &__link
+      margin-bottom: 20px
+      padding: 25px
+      font-size: 14px
+      line-height: 18px
+
+  .conference
+    padding: 90px 0
+    &__wrapper
+      @include section-md
+    &__description
+
+      order: 2
+      margin-bottom: 0
+      text-align: left
+    &__title, &__text
+      text-align: left
+    &__block-img
+      width: 100%
+      height: fit-content
+      order: 1
+    &__link
+      @include btn-md
+    &__card-img-bg
+      left: -11%
+
+  .safety
+    padding: 90px 0
+    &__wrapper
+      @include section-md
+    &__description
+      margin-bottom: 0
+      text-align: left
+    &__title, &__text
+      text-align: left
+    &__link
+      @include btn-md
+    &__block-img
+
+      height: fit-content
+    &__card-img
+      &:nth-child(2)
+        top: 54%
+  .safety__card-img-bg
+    position: absolute
+    top: -50px
+    left: 60%
+
+  .access
+    &__wrapper
+      @include section-md
+    &__description
+
+      order: 2
+      margin-bottom: 0
+    &__title, &__text
+      text-align: left
+    &__btn-group
+      display: flex
+    &__btn
+      @include btn-md
+      &:nth-child(1)
+        margin-bottom: 0
+        margin-right: 20px
+    &__block-img
+      height: fit-content
+      order: 2
+
+  .broadcast
+    padding: 90px 0
+    &__wrapper
+      @include section-md
+    &__description
+      text-align: left
+      margin-bottom: 0
+    &__title, &__text
+      text-align: left
+    &__btn
+      @include btn-md
+    &__wrapper-img
+
+  .access__card-img-bg
+    top: -30px
+    right: auto
+    left: -30px
+
+  .hero-img-bg-ellipse
+    display: block
+
+  .main__bg-img-one
+    top: -60px
+    width: 837px
+    height: 600px
+
+  .main__bg-img-two
+    top: 37%
+    left: auto
+    right: -260px
+    width: 620px
+    height: 620px
+  .main__bg-img-three
+    left: -200px
+    bottom: -20px
+    width: 570px
+    height: 640px
+
+  .header__bg-img
+    top: -250px
+    left: -120px
+    width: 645px
+    height: 720px
+
+  .footer
+    &__wrapper
+      @include section-not-grid
+      flex-direction: row
+    &__communications
+      order: 2
+      align-items: flex-end
+      margin-bottom: 0
+
+@media (min-width: 992px)
+  .container
+    max-width: $lg
+    min-width: $lg
+
+  .header
+    &__nav
+      max-width: 1096px
+
+  .hero
+    &__block-img
+      height: 511px
+    &__card-img
+      &:nth-child(1)
+        height: 361px
+      &:nth-child(2)
+        height: 361px
+      &:nth-child(3)
+        width: 168px
+        height: 176px
+      &:nth-child(4)
+        width: 179px
+        height: 237px
+
+  .hero-img-bg-ellipse
+    top: 100px
+  .tegs
+    &__wrapper
+      max-width: 906px
+      min-width: 906px
+    &__link
+      padding: 25px 50px
+      margin-bottom: 30px
+
+  .conference
+    &__card-img
+      &:nth-child(2)
+        bottom: -20px
+        width: 169px
+        height: 320px
+
+  .safety
+    &__card-img
+      &:nth-child(1)
+        height: 400px
+      &:nth-child(2)
+        width: 350px
+        height: 126px
+
+  .access
+    &__card-img
+      &:nth-child(1)
+        width: 410px
+        height: 410px
+      &:nth-child(2)
+        width: 190px
+        height: 360px
+
+  .broadcast
+    padding: 90px 0 0 0
+    &__wrapper-img
+      top: -132px
+      left: 0
+      transform: translateX(0)
+      width: 588px
+      height: 455px
+    &__point
+      width: 10px
+      height: 10px
+    &__description
+      margin-top: -100px
+
+  .control-panel
+    height: 50px
+    align-items: center
+    &__img
+      width: 32px
+      height: 32px
+
+@media (min-width: 1320px)
+  .container
+    max-width: $xl
+    min-width: $xl
+
+  .hero
+    &__title
+      font-size: 46px
+      line-height: 52px
+    &__note
+      font-size: 14px
+      line-height: 18px
+    &__card-img
+      &:nth-child(3)
+        top: 85px
+      &:nth-child(4)
+        left: 250px
+        bottom: 25px
+    &__btn
+      &:hover
+        @include hover-btn
+
+  .conference
+    padding: 195px 0 150px 0
+    &__wrapper
+      column-gap: 6em
+    &__title
+      font-size: $font-sixe-xl
+    &__link
+      &:hover
+        @include hover-btn
+
+  .safety
+    padding: 150px 0
+    &__wrapper
+      column-gap: 6em
+    &__title
+      font-size: $font-sixe-xl
+    &__card-img-bg-points
+      display: block
+    &__link
+      &:hover
+        @include hover-btn
+
+  .access
+    padding: 150px 0 200px 0
+    &__wrapper
+      column-gap: 6em
+    &__title
+      font-size: $font-sixe-xl
+    &__btn
+      &:hover
+        @include hover-btn
+
+  .broadcast
+    z-index: -2
+    &__wrapper
+      column-gap: 6em
+    &__title
+      font-size: $font-sixe-xl
+    &__img-bg
+      display: block
+      position: absolute
+      left: -45px
+      bottom: -25px
+      width: 86px
+      height: 102px
+      fill: $yellow
+      z-index: -1
+      &__icon
+        width: 100%
+        height: 100%
+    &__btn
+      &:hover
+        @include hover-btn
+
+  .social
+    &__link
+      &:hover
+        fill: $yellow
+
+  .hero-img-bg-yellow
+    left: 43%
+
+  .header__bg-img
+    top: -260px
+    left: -250px
+
+  .main__bg-img-one
+    ttop: -68px
+    left: -482px
+    width: 1174px
+    height: 842px
+
+  .conference__card-img-bg
+    width: 207px
+    height: 229.83px
+    left: -99px
+    bottom: -170px
+
+  .main__bg-img-two
+    top: 600px
+    right: -365px
+    width: 750px
+    height: 750px
+
+  .safety__card-img-bg
+    top: -80px
+    left: 62%
+    width: 184px
+    height: 184px
+
+  .main__bg-img-three
+    width: 774px
+    height: 869px
+
+  .main__bg-img-four
+    width: 152px
+    height: 152px

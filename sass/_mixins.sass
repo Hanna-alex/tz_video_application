@@ -1,0 +1,96 @@
+@mixin paragraph
+  font-family: 'Open Sans', sans-serif
+  font-size: 18px
+  line-height: 28px
+  text-align: center
+
+@mixin section
+  display: grid
+  grid-template-columns: 1fr
+  grid-auto-rows: minmax(275px, auto)
+
+@mixin section-md
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-auto-rows: minmax(275px, auto)
+  column-gap: 1em
+  align-items: center
+
+@mixin grid-for-IE
+  grid-column-start: 2
+  grid-column-end: 3
+  max-height: 511px
+
+@mixin grid-for-IE-sm
+  grid-row-start: 2
+  grid-row-end: 3
+  max-height: 511px
+
+@mixin section-not-grid
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+@mixin heading
+  font-family: Montserrat, sans-serif
+  font-weight: bold
+
+@mixin section-title
+  margin-bottom: 35px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: bold
+  font-size: 36px
+  line-height: 42px
+  text-align: center
+
+@mixin links
+  display: inline-block
+  text-decoration: none
+  color: inherit
+
+@mixin btn
+  display: inline-block
+  padding: 17px
+  min-width: 100%
+  min-height: 50px
+  text-transform: uppercase
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 15px
+  border-radius: $bradius
+  text-align: center
+
+@mixin btn-md
+  min-width: 185px
+
+@mixin outline-btn
+  border: 1px solid $white
+  color: $white
+  padding: 17px
+
+@mixin outline-btn-blue
+  border: 1px solid $blue
+  color: $blue
+  min-width: 185px
+  min-height: 50px
+  padding: 17px
+
+@mixin paint-btn
+  background: $white
+  color: $blue
+
+@mixin paint-btn-blue
+  background: $blue
+  color: $white
+
+@mixin card-img
+  position: absolute
+  overflow: hidden
+
+@mixin hover-btn
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25)
+  color: $yellow
+  border-color: $yellow
